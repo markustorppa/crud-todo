@@ -16,3 +16,9 @@
 
 4. Aja `php artisan db:seed`-komento, jolloin saadaan käyttöön admin-käyttäjä.
 
+### Admin-käyttäjän tiedot:
+
+Käyttäjänimi: `admin`
+
+Salasana: `codetag12345678`
+
