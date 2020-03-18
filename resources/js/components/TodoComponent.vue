@@ -257,9 +257,6 @@ function List(lid, lname, lcreator, ltasks) {
           //Tehtävän muokattu sisältö
           let editedtaskcontent = document.getElementById('editedTaskContent'+taskid);
 
-          //Keskitetään tekstikursori inputtiin
-          editedtaskcontent.focus();
-
           //Tehtävän nykyinen sisältö
           let taskcontent = document.getElementById('taskContent'+taskid);
 
@@ -337,6 +334,9 @@ function List(lid, lname, lcreator, ltasks) {
           edittaskbutton.classList.toggle('hidden');
           savetaskbutton.classList.toggle('hidden');
           editedtaskcontent.classList.toggle('hidden');
+
+          //Keskitetään tekstikursori inputtiin
+          editedtaskcontent.focus();
 
         }
 

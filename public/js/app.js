@@ -2139,9 +2139,7 @@ function List(lid, lname, lcreator, ltasks) {
      */
     editTask: function editTask(taskid) {
       //Tehtävän muokattu sisältö
-      var editedtaskcontent = document.getElementById('editedTaskContent' + taskid); //Keskitetään tekstikursori inputtiin
-
-      editedtaskcontent.focus(); //Tehtävän nykyinen sisältö
+      var editedtaskcontent = document.getElementById('editedTaskContent' + taskid); //Tehtävän nykyinen sisältö
 
       var taskcontent = document.getElementById('taskContent' + taskid); //Asetetaan muokattavaksi nykyinen arvo
 
@@ -2200,7 +2198,9 @@ function List(lid, lname, lcreator, ltasks) {
       taskcontent.classList.toggle('hidden');
       edittaskbutton.classList.toggle('hidden');
       savetaskbutton.classList.toggle('hidden');
-      editedtaskcontent.classList.toggle('hidden');
+      editedtaskcontent.classList.toggle('hidden'); //Keskitetään tekstikursori inputtiin
+
+      editedtaskcontent.focus();
     }
   },
   created: function created() {
@@ -15184,7 +15184,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! c:\laragon\www\codetag_crud\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! c:\laragon\www\crud-todo\resources\js\app.js */"./resources/js/app.js");
 
 
 /***/ })
