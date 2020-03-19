@@ -248,8 +248,6 @@ function List(lid, lname, lcreator, ltasks) {
 
         /**
          * Asetetaan tehtävän vanha arvo muokattavaksi
-         * @param  {number} index - Tehtävän index
-         * @param  {number} listindex - Listan index
          * @param  {number} taskid - Tehtävän id
          */
         editTask(taskid) {
